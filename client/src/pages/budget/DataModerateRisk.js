@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import mutualFunds from '../../data/mutualFunds.json'
+import mutualfundData from '../../data/mutualFunds.json'
 import stocksdata from '../../data/stocks.json'
 
 
@@ -11,7 +11,7 @@ const DataLowRisk = () => {
   
   const getApiData = async () => {
     try {
-      setMutualFunds(mutualFunds);
+      setMutualFunds(mutualfundData);
       setStockData(stocksdata);
 
     } catch (error) {
@@ -30,16 +30,15 @@ const DataLowRisk = () => {
   return (
     <div className="bg-gradient-to-b font-['Montserrat'] from-[#edf5fe] to-[#cee3fc]">
       <div className="row">
-      <p className="text-xl font-medium">Stocks With Moderate Risk</p>
+      <p className="text-xl font-medium">Mutual Funds With Moderate Risk</p>
       <div className="row">
         <div className="grid grid-cols-3 gap-3">
         {mutualFunds.map((data, index) => {
         if (index < 20 && data.Risk =="MODERATE") {
-            // const { "Scheme Code" } = post 
           return (
-            <div className="mx-auto col-span-1 bg-white my-3 border-2 border-pink-500 rounded-md" key={data.id}>
+            <div className="mx-auto col-span-1 bg-white my-3 border-2 border-orange-500 rounded-md" key={data.id}>
               <div className="pt-5 w-72 font-['Montserrat]">
-                <div className="rounded-lg overflow-hidden shadow-lg max-w-sm h-64">
+                <div className="rounded-lg overflow-hidden shadow-lg max-w-sm h-72">
                   <div className="flex">
                     <img src="logo512.png" alt="" className="w-10 h-10" />
                     <p className="ml-5 mt-3">{data.SchemeName}</p>
@@ -48,9 +47,10 @@ const DataLowRisk = () => {
                   <div className="row">
                     <div className="grid grid-cols-2 mt-5">
                       <div>
+                        <p className="block text-sm font-semibold text-gray-400">Scheme Code</p>
                         <label
                           for="symbol"
-                          className="block text-sm font-semibold text-gray-400  "
+                          className="block text-sm text-black"
                         >
                           {data.SchemeCode}
                         </label>
@@ -63,7 +63,7 @@ const DataLowRisk = () => {
                         >
                           Net Asset Value
                         </label>
-                        <p className="block text-sm  text-black ">{data.NetAssetValue} </p>
+                        <p className="block text-sm  text-black">{data.NetAssetValue} </p>
                       </div>
                     </div>
                   </div>
@@ -124,11 +124,11 @@ const DataLowRisk = () => {
       </div>
 
       <div className="row">
-        <p>Stocks with Low Risk</p>
+        <p className="text-xl font-medium">Stocks with Moderate Risk</p>
         <div className="row">
         <div className="grid grid-cols-3 gap-3">
         {stockData.map((data, index) => {
-        if (index < 3) {
+        if (index < 12 && data.Risk =="MODERATE") {
           return (
             <div className="mx-auto col-span-1 bg-white my-3 border-2 border-pink-500 rounded-md" key={data.id}>
               <div className="pt-5 w-72 font-['Montserrat]">

@@ -21,6 +21,8 @@ function App() {
           <Route exact path='/Low-Risk' element={<DataLowRisk/>}></Route>
           {/* <Route exact path='/Moderate-Risk' element={<DataMod />}></Route> */}
           <Route exact path='/Moderate-Risk' element={<DataModerateRisk />}></Route>
+          <Route exact path='/High-Risk' element={<DataModerateRisk />}></Route>
+          <Route exact path='/financial-goal-plan' element={<DataModerateRisk />}></Route>
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

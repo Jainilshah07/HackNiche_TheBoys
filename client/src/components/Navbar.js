@@ -20,32 +20,24 @@ const Navbar = () => {
       </div>
       <div className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto ${open ? '' : 'hidden'}`}>
         <div className="text-sm lg:flex-grow mt-4 lg:text-center font-[Montserrat] font-extrabold">
+        <Link to="/profile" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
+            <span>Profile</span>
+          </Link>
           <Link to="/investment" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
             <span>Investment</span>
           </Link>
-          {/* <Link to="/" id="dropdown" className="relative block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8" onClick={() => setOpen1(!open1)}>
-            <div className='flex'>
-              <span className=''>Events</span>
-              <img className='w-6 h-6 ml-1' src={dropdown} alt="" />
-            </div>
-            <div className={`absolute right-0 z-10 mt-2 w-32 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${open1 ? 'block' : 'hidden'}`} role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
-              <div className="py-1" role="none">
-                <Link to="/" className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-200 p-2 hover:rounded-full" role="menuitem" tabindex="-1" id="menu-item-0">Events</Link>
-                <Link to="/events/blogs/all" className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-200 p-2 hover:rounded-full" role="menuitem" tabindex="-1" id="menu-item-1">Blogs</Link>
-              </div>
-            </div>
-          </Link> */}
-          <Link to="/profile" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
-            <span>Budget</span>
-          </Link>
-          <Link to="/expense-tracking" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
+          
+          {/* <Link to="/expense-tracking" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
             <span>Expense-Tracker</span>
-          </Link>
+          </Link> */}
           <Link to="/portfolio" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
             <span>Portfolio</span>
           </Link>
           <Link to="/beginner's-guide" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
             <span>Beginner's Guide</span>
+          </Link>
+          <Link to="/financial-goal-plan" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
+            <span>Financial Goal</span>
           </Link>
           
           {/* <Link to="/events/data-2-knowledge" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">

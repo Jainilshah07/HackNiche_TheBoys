@@ -24,6 +24,7 @@ const Budget = () => {
   return (
     <div className="h-screen bg-gradient-to-b font-['Montserrat'] from-[#edf5fe] to-[#cee3fc]">
       <div className="row py-3 mx-20">
+        <p className="text-xl my-4 font-bold">Let's Manage Your Money Based on Our Recommendor that recomends based on Risk Factor</p>
         <div className="grid grid-cols-1 md:grid-cols-3">
             <BudgetCard image={Stock2} title="Government Bonds, FD's" risk="Low-Risk" />
             <BudgetCard image={Stock1} title="Stocks, Mutual Funds" risk="Moderate-Risk" />
