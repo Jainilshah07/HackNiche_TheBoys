@@ -35,7 +35,7 @@ const Navbar = () => {
               </div>
             </div>
           </Link> */}
-          <Link to="/budget" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
+          <Link to="/profile" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
             <span>Budget</span>
           </Link>
           <Link to="/expense-tracking" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
