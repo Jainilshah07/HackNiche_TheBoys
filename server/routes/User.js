@@ -1,11 +1,15 @@
 const express = require("express");
 const router = express.Router();
+//const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 
+const JWT_SECRET = "abcdefg";
 require("../Database/db")
 
 const User = require("../models/User")
 
 router.post("/register", async (req, res) => {
+    let success = false;
     const {
         FirstName,
         LastName,
@@ -15,14 +19,13 @@ router.post("/register", async (req, res) => {
         CPassword,
 
     } = req.body;
-
-    let num = await User.findOne({ EmailId: req.body.EmailId });
-    if (num) {
-        return res.status(400).json({ error: "Sorry already registered" });
-    }
-
     try {
-        num = User.create({
+        let num = await User.findOne({ EmailId: req.body.EmailId });
+        if (num) {
+            return res.status(400).json({ error: "Sorry already registered" });
+        }
+
+        num = await User.create({
             FirstName,
             LastName,
             MobileNo,
@@ -32,9 +35,25 @@ router.post("/register", async (req, res) => {
 
         });
         res.status(200).send("User Registered");
+
+        const data = {
+            num: {
+                id: num.id
+            }
+        }
+
+        const authtoken = jwt.sign(data, JWT_SECRET);
+        success = true;
+        res.json({ success, authtoken })
+
     } catch (error) {
+        console.error("Hello ", error.message);
         res.status(500).send("Error");
     }
+
+
+
+
 });
 
 router.post("/budgetdetails", async (req, res) => {
