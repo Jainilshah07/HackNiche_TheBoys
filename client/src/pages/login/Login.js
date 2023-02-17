@@ -1,14 +1,18 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// import axios from "../../axios";
+import bg from "../../assets/bgfinal.svg";
+import logo from "../../assets/Logo.jpg";
+import google from "../../assets/google.svg";
+import github from "../../assets/github.svg";
+import signup from "../../assets/signup.svg";
 import axios from "axios";
 
 const Login = () => {
     const navigate = useNavigate();
 
     const [input, setInput] = useState({
-        EmailId: "",
+        EmailIdId: "",
         Password: ""
 
     });
@@ -25,7 +29,7 @@ const Login = () => {
 
     const SubmitHandler = async (e) => {
         e.preventDefault();
-        const user = { EmailId: input.EmailId, Password: input.Password }
+        const user = { EmailIdId: input.EmailIdId, Password: input.Password }
         console.log(user);
         try {
             if (user) {
@@ -38,54 +42,94 @@ const Login = () => {
             console.log("error form content", error)
         }
         setInput({
-            EmailId: "", Password: "",
+            EmailIdId: "", Password: "",
         });
     };
 
 
     return (
-        <div className="relative bg-gradient-to-tr from-pink-200 to-blue-200 flex flex-col justify-center min-h-screen overflow-hidden">
-            <div className="m-2 md:w-[27rem] p-6 md:m-auto bg-sky-900 rounded-md shadow-xl shadow-rose-600/40 ring-2 ring-black md:max-w-xl">
-                <h1 className="text-3xl font-semibold text-center text-gray-400 ">
-                    Login
+        <>
+        <form onSubmit={SubmitHandler}>
+        <div className="h-[630px] overflow-y-hidden bg-hero text-gray-900 flex justify-center">
+          <div className="max-w-screen-xl m-0 bg-white shadow sm:rounded-lg flex justify-center flex-1">
+            <div className="lg:w-1/2 xl:w-5/12 sm:p-4">
+              <div>
+                <img src={logo} className="w-32 mx-auto" alt="" />
+              </div>
+              <div className="mt-0 flex flex-col items-center">
+                <h1 className="text-2xl font-extrabold text-poppins">
+                  Sign In with Finance Friend
                 </h1>
-                <form className="mt-6">
-                    <div className="mb-2"></div>
-                    <div className="mb-2">
-                        <label
-                            for="Email"
-                            className="block text-sm font-semibold text-gray-400 text-left ml-10">
-                            Email
-                        </label>
-                        <input
-                            type="email" name="EmailId" value={input.EmailId} onChange={InputHandler}
-                            className="block w-48 md:w-72 ml-9 px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-3xl focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                        />
-                    </div>
+                <div class="w-full flex-1 mt-5">
+                  <div class="flex flex-col items-center">
+                    <button class="w-full max-w-xs font-bold shadow-sm rounded-lg py-2 bg-[#D4D9F6] text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
+                      <div class="bg-white p-2 rounded-full">
+                        <img class="w-4" src={google} alt="" />
+                      </div>
+                      <span class="ml-4">Sign In with Google</span>
+                    </button>
 
-                    <div className="mb-2">
-                        <label
-                            for="aadhar"
-                            className="block text-sm font-semibold text-gray-400 text-left ml-10"
+                    <button class="w-full max-w-xs font-bold shadow-sm rounded-lg py-2 bg-[#D4D9F6] text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline mt-5">
+                      <div class="bg-white p-1 rounded-full">
+                        <img class="w-6" src={github} alt="" />
+                      </div>
+                      <span class="ml-4">Sign In with GitHub</span>
+                    </button>
+                  </div>
+
+                  <div class="my-2 border-b text-center">
+                    <div class="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
+                      Or sign up with e-mail
+                    </div>
+                  </div>
+
+                  <div class="mx-auto mt-2 max-w-xs">
+                    <input
+                      name="EmailId"
+                      class="w-full px-8 py-2 mt-5 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                      type="EmailId"
+                      placeholder="EmailId"
+                      value={input.EmailId}
+                      onChange={InputHandler}
+                      reaquired
+                    />
+                    <input
+                      name="Password"
+                      class="w-full px-8 py-2 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
+                      type="Password"
+                      placeholder="Set Password"
+                      value={input.Password}
+                      onChange={InputHandler}
+                      required
+                    />
+                    <button class="mt-3 tracking-wide font-semibold bg-[#233FF2] text-gray-100 w-full py-3 rounded-lg hover:bg-[#1D33AA] transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                      <img className="fill-white w-4 h-4" src={signup} alt="" />
+                      <span class="ml-3">Sign In</span>
+                    </button>
+                    <div className="flex mt-2">
+                      <div class=" text-xs text-gray-600">
+                        Not Signed In? 
+                        <Link
+                          to="/register"
+                          class="border-b border-gray-500 border-dotted"
                         >
-                            Password
-                        </label>
-                        <input
-                            type="password" name="Password" value={input.Password} onChange={InputHandler}
-                            className="block w-48 md:w-72 ml-9 px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-3xl focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                        />
+                          Sign Up 
+                        </Link>
+                      </div>
                     </div>
-
-                    <div className="mt-6">
-                        <button onClick={SubmitHandler} type="button" class="bg-gradient-to-r from-green-400 to-blue-300  w-36 rounded-3xl h-10">Login</button>
-
-                    </div>
-                    <div className='mt-3'>
-                        <Link className='text-gray-400 ' to="#">Forgot Password?</Link>
-                    </div>
-                </form>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="flex-1 bg-[#D4D9F6] text-center hidden lg:flex">
+              <div class="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat align-middle items-center">
+                <img src={bg} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </form>
+      </>
     );
 };
 export default Login;

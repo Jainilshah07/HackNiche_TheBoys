@@ -1,10 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+
 const BudgetCard = (props) => {
+    let risk = props.risk;
     const navigate = useNavigate();
     const handleSubmit =()=>{
-        navigate(`/`)
+        navigate(`/${risk}`)
     }
   return (
     <div className="mx-4 md:mx-8 h-full bg-gradient-to-r from-[#34BDF3] to-[#34BDF3] p-1">
@@ -13,9 +15,9 @@ const BudgetCard = (props) => {
                 <p className="text-lg font-semibold">Popular - Viewed over 40K times in the last month</p>
             </div>
             <div className="row text-white">
-                <div className="grid grid-cols-4">
-                    <div className="col-span-1">
-                        <img src="" alt="" />
+                <div className="grid grid-cols-5">
+                    <div className="col-span-2">
+                        <img className="w-full h-32" src={props.image} alt="" />
                     </div>
                     <div className="col-span-3">
                         <p>{props.title}</p>

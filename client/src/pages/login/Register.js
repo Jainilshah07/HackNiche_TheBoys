@@ -1,8 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// import axios from "../../axios";
-import axios from 'axios';
+import bg from "../../assets/bgfinal.svg";
+import logo from "../../assets/Logo.jpg";
+import google from "../../assets/google.svg";
+import github from "../../assets/github.svg";
+import signup from "../../assets/signup.svg";
+import axios from "axios";
 
 const Register = () => {
     const navigate = useNavigate();
@@ -27,7 +31,7 @@ const Register = () => {
 
     const SubmitHandler = async (e) => {
         e.preventDefault();
-        const user = { FirstName: input.FirstName, LastName: input.LastName, MobileNo: "", EmailId: input.EmailId, Password: input.Password }
+        const user = { FirstName: input.FirstName, LastName: input.LastName, MobileNo: "", EmailId: input.EmailId, Password: input.Password, CPassword: input.CPassword }
         // console.log(user);
         try {
             if (user) {
@@ -44,100 +48,83 @@ const Register = () => {
     };
 
     return (
-        <div className="relative bg-gradient-to-tr from-pink-200 to-blue-200 flex flex-col justify-center min-h-fit overflow-hidden pt-0 md:pt-4 md:pb-4">
-            <div className="md:w-[27rem] p-6 md:m-auto bg-sky-900 rounded-md shadow-xl shadow-rose-600/40 ring-2 ring-black md:max-w-xl">
-                <h1 className="text-2xl font-semibold text-center text-gray-400 ">
-                    Register
+        <div>
+      <form onSubmit={SubmitHandler}>
+        <div className="h-[630px] bg-hero text-gray-900 flex justify-center">
+          <div className="max-w-screen-xl  bg-white shadow sm:rounded-lg flex justify-center flex-1">
+            <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-4">
+              <div>
+                <img src={logo} className="w-32 h-full mx-auto" alt="" />
+              </div>
+              <div className="mt-4 flex flex-col items-center">
+                <h1 className="text-2xl font-extrabold text-poppins">
+                  Register with V-Learn
                 </h1>
-                <form className="mt-1">
-                    <div className="mb-2">
-                        <label
-                            for="FirstName"
-                            className="block text-sm font-semibold text-gray-400 text-left ml-10 "
-                        >
-                            First Name
-                        </label>
-                        <input
-                            type="text" name="FirstName" value={input.FirstName} onChange={InputHandler}
-                            className="block w-48 md:w-72 ml-9 px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-3xl focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                        />
-                        <label
-                            for="FirstName"
-                            className="block text-sm font-semibold text-gray-400 text-left ml-10 "
-                        >
-                            Last Name
-                        </label>
-                        <input
-                            type="text" name="LastName" value={input.LastName} onChange={InputHandler}
-                            className="block w-48 md:w-72 ml-9 px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-3xl focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                        />
-                    </div>
+                <div class="w-full flex-1 mt-5">
+                  <div class="flex flex-col items-center">
+                    <button class="w-full max-w-xs font-bold shadow-sm rounded-lg py-2 bg-[#D4D9F6] text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
+                      <div class="bg-white p-2 rounded-full">
+                        <img class="w-4" src={google} alt="" />
+                      </div>
+                      <span class="ml-4">Sign Up with Google</span>
+                    </button>
 
-                    <div className="mb-2">
-                        <label
-                            for="Email"
-                            className="block text-sm font-semibold text-gray-400 text-left ml-10"
-                        >
-                            Email
-                        </label>
-                        <input
-                            type="email" name="EmailId" value={input.EmailId} onChange={InputHandler}
-                            className="block w-48 md:w-72 ml-9 px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-3xl focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                        />
-                    </div>
-                    <div className="mb-2">
-                        <label
-                            for="MobileNo"
-                            className="block text-sm font-semibold text-gray-400 text-left ml-10"
-                        >
-                            Mobile Number
-                        </label>
-                        <input
-                            type="text" name="MobileNo" value={input.MobileNo} onChange={InputHandler}
-                            className="block w-48 md:w-72 ml-9 px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-3xl focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                        />
-                    </div>
-                    <div className="mb-2">
-                        <label
-                            for="password"
-                            className="block text-sm font-semibold text-gray-400 text-left ml-10"
-                        >
-                            Password
-                        </label>
-                        <input
-                            type="Password" name="Password" value={input.Password} onChange={InputHandler}
-                            className="block w-48 md:w-72 ml-9 px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-3xl focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                        />
-                    </div>
-                    <div className="mb-2">
-                        <label
-                            for="CPassword"
-                            className="block text-sm font-semibold text-gray-400 text-left ml-10"
-                        >
-                            Confirm Password
-                        </label>
-                        <input
-                            type="Password" name="CPassword" value={input.CPassword} onChange={InputHandler}
-                            className="block w-48 md:w-72 ml-9 px-4 py-2 mt-2 text-indigo-700 bg-white border rounded-3xl focus:border-indigo-400 focus:ring-indigo-300 focus:outline-none focus:ring focus:ring-opacity-40"
-                        />
-                    </div>
+                    <button class="w-full max-w-xs font-bold shadow-sm rounded-lg py-2 bg-[#D4D9F6] text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline mt-5">
+                      <div class="bg-white p-1 rounded-full">
+                        <img class="w-6" src={github} alt="" />
+                      </div>
+                      <span class="ml-4">Sign Up with GitHub</span>
+                    </button>
+                  </div>
 
-
-
-                    <div className="mt-4">
-                        <button onClick={SubmitHandler} type="button" class="bg-gradient-to-r from-green-400 to-blue-300  w-36 rounded-3xl h-10">Register</button>
+                  <div class="mx-auto mt-5 max-w-xs">
+                    <input
+                      name="FirstName"
+                      class="w-full px-8 py-2 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                      type="text"
+                      placeholder="Name"
+                      value={input.FirstName}
+                      onChange={InputHandler}
+                      required
+                    />
+                    <input
+                      name="EmailId"
+                      class="w-full px-8 py-2 mt-5 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
+                      type="EmailId"
+                      placeholder="EmailId"
+                      value={input.EmailId}
+                      onChange={InputHandler}
+                      required
+                    />
+                    <input
+                      name="Password"
+                      class="w-full px-8 py-2 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
+                      type="Password"
+                      placeholder="Set Password"
+                      value={input.Password}
+                      onChange={InputHandler}
+                      required
+                    />
+                    <button class="mt-3 tracking-wide font-semibold bg-[#233FF2] text-gray-100 w-full py-3 rounded-lg hover:bg-[#1D33AA] transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
+                      <img className="fill-white w-4 h-4" src={signup} alt="" />
+                      <span class="ml-3">Sign Up</span>
+                    </button>
+                    <div className="flex ml-2 mt-2">
+                      <p  className="text-xs text-gray-600">Already have account? <a className="border-b border-gray-500 border-dotted" href="/login">Login</a> </p>
                     </div>
-
-                </form>
-
-                <p className="mt-4 text-xs font-light text-center text-gray-400 ">
-                    Already have an account?
-                    <Link to='/login' className="font-medium text-indigo-600 hover:underline">
-                        Log in
-                    </Link>
-                </p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="flex-1 bg-[#D4D9F6] text-center hidden lg:flex">
+              <div class="m-12 xl:m-16 w-full bg-contain bg-center bg-no-repeat align-middle items-center">
+                <img src={bg} alt="" />
+              </div>
+            </div>
+          </div>
         </div>
+      </form>
+    </div>
     );
 };
 
