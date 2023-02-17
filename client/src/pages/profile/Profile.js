@@ -43,7 +43,7 @@ const Profile = () => {
       <div className="row">
       <div className="grid grid-cols-6">
         <div className="col-span-2">
-        <div className="row">
+            <div className="row">
             <div className="grid grid-cols-2">
             <div className="col-span-1">
                 <p className='text-xl text-white font-medium'>Name: </p>
@@ -63,22 +63,27 @@ const Profile = () => {
             <div className="col-span-1">
                 <input className='border my-2 border-black mx-4 rounded' type="text" name="occupation" />
             </div>
+            <div className='font-medium text-xl'>Total Family Income:</div>
+                <input className='border my-2 border-black mx-4 rounded' type="number" name="totalfamincome" />
             </div>
             </div>
+            <div className="row text-white">
+                
+            </div>
+            <div className="row"><button onClick={SubmitHandler} className='border p-1 border-black rounded '> Submit </button></div>
+            
             
         </div>
-        <div className="col-span-2">
-            
-        </div>
+        <div className="col-span-2"></div>
 
       </div>
       </div>
 
-      <div className="row">
+      {/* <div className="row">
         <p>Total Family Income:</p>
         <input className='border my-2 border-black mx-4 rounded' type="number" name="totalfamincome" />
       </div>
-      <div className="row"><button onClick={SubmitHandler} className='border p-1 border-black rounded '> Submit </button></div>
+      <div className="row"><button onClick={SubmitHandler} className='border p-1 border-black rounded '> Submit </button></div> */}
         </div>
       
       

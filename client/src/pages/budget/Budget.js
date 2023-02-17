@@ -4,7 +4,7 @@ import BudgetCard from './BudgetCard'
 const Budget = () => {
   return (
     <div>
-      <div className="row mx-20">
+      <div className="row py-3 mx-20">
         <div className="grid grid-cols-1 md:grid-cols-3">
             <BudgetCard title="Government Bonds, FD's" risk="Low Risk" />
             <BudgetCard title="Stocks, Mutual Funds" risk="Moderate Risk" />
