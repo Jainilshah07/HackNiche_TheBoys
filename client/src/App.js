@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
+import Beginner from './pages/BeginnersGuide/Beginner';
 import Budget from './pages/budget/Budget';
 import DataLowRisk from './pages/budget/DataLowRisk';
 import DataModerateRisk from './pages/budget/DataModerateRisk';
@@ -9,6 +10,7 @@ import Login from './pages/login/Login';
 import Register from './pages/login/Register';
 import Profile from './pages/profile/Profile';
 import SIP from './pages/Sip/SIP';
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -26,10 +28,12 @@ function App() {
           <Route exact path='/High-Risk' element={<DataModerateRisk />}></Route>
           <Route exact path='/financial-goal-plan' element={<DataModerateRisk />}></Route>
           <Route exact path='/stocks-data' element={<Stocks />}></Route>
+          <Route exact path='/beginner' element={<Beginner />}></Route>
 
         </Routes>
         <SIP />
-        {/* <Footer /> */}
+
+        <Footer />
       </BrowserRouter>
     </div>
   );
