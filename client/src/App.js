@@ -21,6 +21,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path='/login' element={<Login />} ></Route>
+          <Route exact path='/' element={<Profile />} ></Route>
           <Route exact path='/register' element={<Register />}></Route>
           <Route exact path='/profile' element={<Profile />}></Route>
           <Route exact path='/investment' element={<Budget />}></Route>
