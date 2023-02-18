@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import sip from "../../assets/Sip.png"
 
 const SIP = () => {
+    let res;
 
     const [input, setInput] = useState({
         amount: "",
@@ -20,6 +21,21 @@ const SIP = () => {
         });
     };
 
+    const [records, setRecords] = useState([]);
+
+    const SubmitHandler = async (e) => {
+        e.preventDefault();
+        const newRecord = { ...input, id: new Date().getTime().toString() }
+        setRecords({ ...records, newRecord })
+        // const user = { amount: input.amount, years: input.years, roi: input.roi }
+        // console.log(user);
+        sip = parseInt(newRecord.amount) * (([1 + parseInt(newRecord.roi)] * 12 * parseInt(newRecord.years) - 1) / (parseInt(newRecord.roi)) * (1 + parseInt(newRecord.roi)))
+        console.log(sip)
+        setInput({
+            EmailIdId: "", Password: "",
+        });
+    };
+
     return (
         <div>
             <div className='grid grid-cols-3'>
@@ -31,7 +47,7 @@ const SIP = () => {
                     <h1 className='font-extrabold text-3xl my-10'>SIP CALCULATOR</h1>
 
                     <div className='row'>
-                        <form className="w-full max-w-lg ">
+                        <form onSubmit={SubmitHandler} className="w-full max-w-lg ">
                             <div className="flex flex-wrap -mx-auto mb-6">
                                 <div className="w-full  px-3 mb-6 md:mb-0">
                                     <div className="row">
@@ -81,6 +97,7 @@ const SIP = () => {
                             </div>
 
                         </form>
+                        div
                     </div>
 
                 </div>

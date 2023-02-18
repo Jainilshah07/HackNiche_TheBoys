@@ -8,6 +8,7 @@ import Stocks from './pages/dataofrisks/Stocks';
 import Login from './pages/login/Login';
 import Register from './pages/login/Register';
 import Profile from './pages/profile/Profile';
+import SIP from './pages/Sip/SIP';
 
 function App() {
   return (
@@ -16,16 +17,18 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path='/login' element={<Login />} ></Route>
-          <Route exact path='/register' element={<Register/>}></Route>
-          <Route exact path='/profile' element={<Profile/>}></Route>
-          <Route exact path='/investment' element={<Budget/>}></Route>
-          <Route exact path='/Low-Risk' element={<DataLowRisk/>}></Route>
+          <Route exact path='/register' element={<Register />}></Route>
+          <Route exact path='/profile' element={<Profile />}></Route>
+          <Route exact path='/investment' element={<Budget />}></Route>
+          <Route exact path='/Low-Risk' element={<DataLowRisk />}></Route>
           {/* <Route exact path='/Moderate-Risk' element={<DataMod />}></Route> */}
           <Route exact path='/Moderate-Risk' element={<DataModerateRisk />}></Route>
           <Route exact path='/High-Risk' element={<DataModerateRisk />}></Route>
           <Route exact path='/financial-goal-plan' element={<DataModerateRisk />}></Route>
           <Route exact path='/stocks-data' element={<Stocks />}></Route>
+
         </Routes>
+        <SIP />
         {/* <Footer /> */}
       </BrowserRouter>
     </div>
