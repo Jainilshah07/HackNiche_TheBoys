@@ -2,7 +2,7 @@ import React from 'react'
 import BondPieChart from '../../components/BondPieCharts'
 import BondChart from '../../components/BondCharts'
 
-const main = () => {
+const Main = () => {
     return (
         <div>
             <div className="row">
@@ -10,7 +10,7 @@ const main = () => {
                     <div className="col-span-1">
                         <div className="row">
                             <h1 className='text-3xl my-5 font-extrabold'>Stock</h1>
-                            <table className='mx-auto border-2 border-black mb-10 text-2xl'>
+                            <table className='mx-auto bg-blue-400 border-2 border-black mb-10 text-2xl'>
                                 <tr>
                                     <th className='xl:px-10 border-solid border-2 border-black'>Sr.No</th>
                                     <th className='xl:px-10 border-solid border-2 border-black'>Stock Name</th>
@@ -35,7 +35,7 @@ const main = () => {
                         </div>
                         <div className="row">
                             <h1 className='text-3xl my-5 font-extrabold'>Bond</h1>
-                            <table className='mx-auto border-2 border-black mb-10 text-2xl'>
+                            <table className='mx-auto bg-green-300 border-2 border-black mb-10 text-2xl'>
                                 <tr>
                                     <th className='xl:px-10 border-solid border-2 border-black'>Sr.No</th>
                                     <th className='xl:px-10 border-solid border-2 border-black'>Stock Name</th>
@@ -63,7 +63,7 @@ const main = () => {
                     <div className="col-span-1">
                         <div className="row">
                             <h1 className='text-3xl my-10 font-extrabold'>Gold</h1>
-                            <table className='mx-auto border-2 border-black mb-10 text-2xl'>
+                            <table className='mx-auto bg-yellow-400 border-2 border-black mb-10 text-2xl'>
                                 <tr>
                                     <th className='xl:px-10 border-solid border-2 border-black'>Sr.No</th>
                                     <th className='xl:px-10 border-solid border-2 border-black'>Stock Name</th>
@@ -83,7 +83,7 @@ const main = () => {
                         </div>
                         <div className="row">
                             <h1 className="text-3xl my-5 font-extrabold">Fixed Deposits</h1>
-                            <table className='mx-auto border-2 border-black mb-10 text-2xl'>
+                            <table className='mx-auto bg-orange-400 border-2 border-black mb-10 text-2xl'>
                                 <tr>
                                     <th className='xl:px-10 border-solid border-2 border-black'>Sr.No</th>
                                     <th className='xl:px-10 border-solid border-2 border-black'>Stock Name</th>
@@ -124,4 +124,4 @@ const main = () => {
     )
 }
 
-export default main
+export default Main

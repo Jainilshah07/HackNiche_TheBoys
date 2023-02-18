@@ -131,6 +131,7 @@ const DataLowRisk = () => {
         </div>
       </div>
       </div>
+      <hr className="bg-black" />
 
       <div className="row">
         <p className="text-xl py-4 font-bold">Stocks with Low Risk</p>
