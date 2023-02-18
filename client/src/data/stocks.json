@@ -15,7 +15,7 @@
     "Trades": 18374,
     "Deliverable Volume": 1004327,
     "%Deliverble": 0.6138,
-    "%change": 0.021152443,
+    "percentChange": 0.021152443,
     "Risk": "MODERATE"
   },
   {
@@ -34,7 +34,7 @@
     "Trades": 11665,
     "Deliverable Volume": 1503,
     "%Deliverble": 0.5846,
-    "%change": 0.031486486,
+    "percentChange": 0.031486486,
     "Risk": "HIGH"
   },
   {
@@ -53,7 +53,7 @@
     "Trades": 26996,
     "Deliverable Volume": 611675,
     "%Deliverble": 0.7105,
-    "%change": -0.05127551,
+    "percentChange": -0.05127551,
     "Risk": "HIGH"
   },
   {
@@ -72,7 +72,7 @@
     "Trades": 19239,
     "Deliverable Volume": 1202933,
     "%Deliverble": 0.3028,
-    "%change": -0.32655902,
+    "percentChange": -0.32655902,
     "Risk": "HIGH"
   },
   {
@@ -91,7 +91,7 @@
     "Trades": 4155,
     "Deliverable Volume": 908264,
     "%Deliverble": 0.2888,
-    "%change": -0.1515,
+    "percentChange": -0.1515,
     "Risk": "HIGH"
   },
   {
@@ -110,7 +110,7 @@
     "Trades": "",
     "Deliverable Volume": 450,
     "%Deliverble": 0.9,
-    "%change": 0.026289181,
+    "percentChange": 0.026289181,
     "Risk": "MODERATE"
   },
   {
@@ -129,7 +129,7 @@
     "Trades": 1416,
     "Deliverable Volume": 17004,
     "%Deliverble": 0.654,
-    "%change": -0.006923077,
+    "percentChange": -0.006923077,
     "Risk": "LOW"
   },
   {
@@ -148,7 +148,7 @@
     "Trades": "",
     "Deliverable Volume": 6503775,
     "%Deliverble": 0.6265,
-    "%change": -0.145472062,
+    "percentChange": -0.145472062,
     "Risk": "HIGH"
   },
   {
@@ -167,7 +167,7 @@
     "Trades": 47549,
     "Deliverable Volume": 69929,
     "%Deliverble": 0.1982,
-    "%change": 0.011592179,
+    "percentChange": 0.011592179,
     "Risk": "LOW"
   },
   {
@@ -186,7 +186,7 @@
     "Trades": 13466,
     "Deliverable Volume": 10691,
     "%Deliverble": 0.4709,
-    "%change": -0.014197531,
+    "percentChange": -0.014197531,
     "Risk": "LOW"
   },
   {
@@ -205,7 +205,7 @@
     "Trades": 3553,
     "Deliverable Volume": 1724,
     "%Deliverble": 0.7703,
-    "%change": 0.073617021,
+    "percentChange": 0.073617021,
     "Risk": "HIGH"
   },
   {
@@ -224,7 +224,7 @@
     "Trades": 13861,
     "Deliverable Volume": 4599,
     "%Deliverble": 0.4354,
-    "%change": 0.03358156,
+    "percentChange": 0.03358156,
     "Risk": "HIGH"
   },
   {
@@ -243,7 +243,7 @@
     "Trades": 78446,
     "Deliverable Volume": 187584905,
     "%Deliverble": 0.391,
-    "%change": 0.177147766,
+    "percentChange": 0.177147766,
     "Risk": "HIGH"
   },
   {
@@ -262,7 +262,7 @@
     "Trades": 12359,
     "Deliverable Volume": 31450,
     "%Deliverble": 0.2905,
-    "%change": 0.002159468,
+    "percentChange": 0.002159468,
     "Risk": "LOW"
   },
   {
@@ -281,7 +281,7 @@
     "Trades": 792,
     "Deliverable Volume": 4950,
     "%Deliverble": 0.9612,
-    "%change": 0.017708333,
+    "percentChange": 0.017708333,
     "Risk": "LOW"
   },
   {
@@ -300,7 +300,7 @@
     "Trades": 13902,
     "Deliverable Volume": 9165,
     "%Deliverble": 0.903,
-    "%change": 0.056923077,
+    "percentChange": 0.056923077,
     "Risk": "HIGH"
   },
   {
@@ -319,7 +319,7 @@
     "Trades": 2111,
     "Deliverable Volume": 51193,
     "%Deliverble": 0.6071,
-    "%change": 0.019539428,
+    "percentChange": 0.019539428,
     "Risk": "LOW"
   },
   {
@@ -338,7 +338,7 @@
     "Trades": 4845,
     "Deliverable Volume": 249828,
     "%Deliverble": 0.0737,
-    "%change": 0.002870968,
+    "percentChange": 0.002870968,
     "Risk": "LOW"
   },
   {
@@ -357,7 +357,7 @@
     "Trades": 38210,
     "Deliverable Volume": 5604,
     "%Deliverble": 0.6098,
-    "%change": 0,
+    "percentChange": 0,
     "Risk": "LOW"
   },
   {
@@ -376,7 +376,7 @@
     "Trades": 32536,
     "Deliverable Volume": 46718,
     "%Deliverble": 0.7967,
-    "%change": 0.024096386,
+    "percentChange": 0.024096386,
     "Risk": "MODERATE"
   },
   {
@@ -395,7 +395,7 @@
     "Trades": 12889,
     "Deliverable Volume": 30093,
     "%Deliverble": 0.5093,
-    "%change": 0.006333333,
+    "percentChange": 0.006333333,
     "Risk": "LOW"
   },
   {
@@ -414,7 +414,7 @@
     "Trades": 16591,
     "Deliverable Volume": 254502,
     "%Deliverble": 0.5704,
-    "%change": 0.063352436,
+    "percentChange": 0.063352436,
     "Risk": "HIGH"
   },
   {
@@ -433,7 +433,7 @@
     "Trades": "",
     "Deliverable Volume": 3096,
     "%Deliverble": 0.638,
-    "%change": 0.0193302,
+    "percentChange": 0.0193302,
     "Risk": "LOW"
   },
   {
@@ -452,7 +452,7 @@
     "Trades": 57196,
     "Deliverable Volume": 1994968,
     "%Deliverble": 0.6327,
-    "%change": 0.031944444,
+    "percentChange": 0.031944444,
     "Risk": "HIGH"
   },
   {
@@ -471,7 +471,7 @@
     "Trades": "",
     "Deliverable Volume": 185899,
     "%Deliverble": 0.5792,
-    "%change": 0.003282609,
+    "percentChange": 0.003282609,
     "Risk": "LOW"
   },
   {
@@ -490,7 +490,7 @@
     "Trades": 15826,
     "Deliverable Volume": 1092909,
     "%Deliverble": 0.5288,
-    "%change": -0.006030151,
+    "percentChange": -0.006030151,
     "Risk": "LOW"
   },
   {
@@ -509,7 +509,7 @@
     "Trades": 64507,
     "Deliverable Volume": 35559,
     "%Deliverble": 0.7552,
-    "%change": 0.00537996,
+    "percentChange": 0.00537996,
     "Risk": "LOW"
   },
   {
@@ -528,7 +528,7 @@
     "Trades": 3530,
     "Deliverable Volume": 7300,
     "%Deliverble": 0.7486,
-    "%change": 0.001730104,
+    "percentChange": 0.001730104,
     "Risk": "LOW"
   },
   {
@@ -547,7 +547,7 @@
     "Trades": 43496,
     "Deliverable Volume": 51977,
     "%Deliverble": 0.056,
-    "%change": 0.0000128,
+    "percentChange": 0.0000128,
     "Risk": "LOW"
   },
   {
@@ -566,7 +566,7 @@
     "Trades": 30917,
     "Deliverable Volume": 416948,
     "%Deliverble": 0.6948,
-    "%change": 0.004794282,
+    "percentChange": 0.004794282,
     "Risk": "LOW"
   },
   {
@@ -585,7 +585,7 @@
     "Trades": 12758,
     "Deliverable Volume": 3831,
     "%Deliverble": 0.7722,
-    "%change": 0.041730769,
+    "percentChange": 0.041730769,
     "Risk": "HIGH"
   },
   {
@@ -604,7 +604,7 @@
     "Trades": 42640,
     "Deliverable Volume": 76049,
     "%Deliverble": 0.4299,
-    "%change": 0.020893372,
+    "percentChange": 0.020893372,
     "Risk": "MODERATE"
   },
   {
@@ -623,7 +623,7 @@
     "Trades": 20899,
     "Deliverable Volume": 646626,
     "%Deliverble": 0.7133,
-    "%change": 0.0485,
+    "percentChange": 0.0485,
     "Risk": "HIGH"
   },
   {
@@ -642,7 +642,7 @@
     "Trades": "",
     "Deliverable Volume": 382057,
     "%Deliverble": 0.183,
-    "%change": -0.142527473,
+    "percentChange": -0.142527473,
     "Risk": "HIGH"
   },
   {
@@ -661,7 +661,7 @@
     "Trades": 6242,
     "Deliverable Volume": 7010,
     "%Deliverble": 0.6978,
-    "%change": 0.035356905,
+    "percentChange": 0.035356905,
     "Risk": "HIGH"
   },
   {
@@ -680,7 +680,7 @@
     "Trades": "",
     "Deliverable Volume": 7410,
     "%Deliverble": 0.7403,
-    "%change": 0.0425,
+    "percentChange": 0.0425,
     "Risk": "HIGH"
   },
   {
@@ -699,7 +699,7 @@
     "Trades": 110884,
     "Deliverable Volume": 395612,
     "%Deliverble": 0.1466,
-    "%change": 0.2719,
+    "percentChange": 0.2719,
     "Risk": "HIGH"
   },
   {
@@ -718,7 +718,7 @@
     "Trades": 35776,
     "Deliverable Volume": 53832,
     "%Deliverble": 0.341,
-    "%change": 0.000110302,
+    "percentChange": 0.000110302,
     "Risk": "LOW"
   },
   {
@@ -737,7 +737,7 @@
     "Trades": 16622,
     "Deliverable Volume": 8537695,
     "%Deliverble": 0.2428,
-    "%change": -0.003638569,
+    "percentChange": -0.003638569,
     "Risk": "LOW"
   },
   {
@@ -756,7 +756,7 @@
     "Trades": 19171,
     "Deliverable Volume": 9859619,
     "%Deliverble": 0.3612,
-    "%change": 0.250519481,
+    "percentChange": 0.250519481,
     "Risk": "HIGH"
   },
   {
@@ -775,7 +775,7 @@
     "Trades": 1265,
     "Deliverable Volume": 438,
     "%Deliverble": 0.6759,
-    "%change": -0.023620352,
+    "percentChange": -0.023620352,
     "Risk": "MODERATE"
   },
   {
@@ -794,7 +794,7 @@
     "Trades": 48748,
     "Deliverable Volume": 115350904,
     "%Deliverble": 0.4961,
-    "%change": -0.141477273,
+    "percentChange": -0.141477273,
     "Risk": "HIGH"
   },
   {
@@ -813,7 +813,7 @@
     "Trades": 35221,
     "Deliverable Volume": 1338,
     "%Deliverble": 0.8114,
-    "%change": 0.041219512,
+    "percentChange": 0.041219512,
     "Risk": "HIGH"
   },
   {
@@ -832,7 +832,7 @@
     "Trades": 14370,
     "Deliverable Volume": 181390171,
     "%Deliverble": 0.3771,
-    "%change": 0.120267261,
+    "percentChange": 0.120267261,
     "Risk": "HIGH"
   },
   {
@@ -851,7 +851,7 @@
     "Trades": 58630,
     "Deliverable Volume": 221385,
     "%Deliverble": 0.3214,
-    "%change": 0.059789474,
+    "percentChange": 0.059789474,
     "Risk": "HIGH"
   },
   {
@@ -870,7 +870,7 @@
     "Trades": 86631,
     "Deliverable Volume": 87724,
     "%Deliverble": 0.5699,
-    "%change": 0.032415254,
+    "percentChange": 0.032415254,
     "Risk": "HIGH"
   },
   {
@@ -889,7 +889,7 @@
     "Trades": 20562,
     "Deliverable Volume": 5279,
     "%Deliverble": 0.8127,
-    "%change": 0.048198198,
+    "percentChange": 0.048198198,
     "Risk": "HIGH"
   },
   {
@@ -908,7 +908,7 @@
     "Trades": 364,
     "Deliverable Volume": 27277,
     "%Deliverble": 0.5342,
-    "%change": -0.047794118,
+    "percentChange": -0.047794118,
     "Risk": "HIGH"
   },
   {
@@ -927,7 +927,7 @@
     "Trades": 84121,
     "Deliverable Volume": 2654590,
     "%Deliverble": 0.3134,
-    "%change": 0.011621622,
+    "percentChange": 0.011621622,
     "Risk": "LOW"
   },
   {
@@ -946,7 +946,7 @@
     "Trades": 13826,
     "Deliverable Volume": 897,
     "%Deliverble": 0.6552,
-    "%change": 0.019472222,
+    "percentChange": 0.019472222,
     "Risk": "LOW"
   },
   {
@@ -965,7 +965,7 @@
     "Trades": 76698,
     "Deliverable Volume": 291557,
     "%Deliverble": 0.19,
-    "%change": 0.006424966,
+    "percentChange": 0.006424966,
     "Risk": "LOW"
   },
   {
@@ -984,7 +984,7 @@
     "Trades": 95551,
     "Deliverable Volume": 967474,
     "%Deliverble": 0.2095,
-    "%change": 0.011447368,
+    "percentChange": 0.011447368,
     "Risk": "LOW"
   },
   {
@@ -1003,7 +1003,7 @@
     "Trades": 24427,
     "Deliverable Volume": 5206360,
     "%Deliverble": 0.3042,
-    "%change": -0.175815467,
+    "percentChange": -0.175815467,
     "Risk": "HIGH"
   },
   {
@@ -1022,7 +1022,7 @@
     "Trades": 16957,
     "Deliverable Volume": 3777529,
     "%Deliverble": 0.2491,
-    "%change": 0.063819578,
+    "percentChange": 0.063819578,
     "Risk": "HIGH"
   },
   {
@@ -1041,7 +1041,7 @@
     "Trades": "",
     "Deliverable Volume": 75346,
     "%Deliverble": 0.2967,
-    "%change": 0.045081967,
+    "percentChange": 0.045081967,
     "Risk": "HIGH"
   },
   {
@@ -1060,7 +1060,7 @@
     "Trades": "",
     "Deliverable Volume": 89481,
     "%Deliverble": 0.5261,
-    "%change": 0.030067568,
+    "percentChange": 0.030067568,
     "Risk": "HIGH"
   },
   {
@@ -1079,7 +1079,7 @@
     "Trades": 27244,
     "Deliverable Volume": 12939,
     "%Deliverble": 0.722,
-    "%change": 0.066438356,
+    "percentChange": 0.066438356,
     "Risk": "HIGH"
   },
   {
@@ -1098,7 +1098,7 @@
     "Trades": 2689,
     "Deliverable Volume": 970249,
     "%Deliverble": 0.1463,
-    "%change": -0.146885246,
+    "percentChange": -0.146885246,
     "Risk": "HIGH"
   },
   {
@@ -1117,7 +1117,7 @@
     "Trades": 12416,
     "Deliverable Volume": 52799,
     "%Deliverble": 0.7171,
-    "%change": 4.538,
+    "percentChange": 4.538,
     "Risk": "HIGH"
   },
   {
@@ -1136,7 +1136,7 @@
     "Trades": 19535,
     "Deliverable Volume": 730015,
     "%Deliverble": 0.3596,
-    "%change": -0.012202954,
+    "percentChange": -0.012202954,
     "Risk": "LOW"
   },
   {
@@ -1155,7 +1155,7 @@
     "Trades": "",
     "Deliverable Volume": 8954,
     "%Deliverble": 0.6743,
-    "%change": 0,
+    "percentChange": 0,
     "Risk": "LOW"
   },
   {
@@ -1174,7 +1174,7 @@
     "Trades": 23663,
     "Deliverable Volume": 2497286,
     "%Deliverble": 0.6125,
-    "%change": -0.001144689,
+    "percentChange": -0.001144689,
     "Risk": "LOW"
   },
   {
@@ -1193,7 +1193,7 @@
     "Trades": 9109,
     "Deliverable Volume": 66955,
     "%Deliverble": 0.0505,
-    "%change": 0.0000734,
+    "percentChange": 0.0000734,
     "Risk": "LOW"
   },
   {
@@ -1212,7 +1212,7 @@
     "Trades": 15453,
     "Deliverable Volume": 1760261,
     "%Deliverble": 0.7095,
-    "%change": 0.02326087,
+    "percentChange": 0.02326087,
     "Risk": "MODERATE"
   },
   {
@@ -1231,83 +1231,8 @@
     "Trades": "",
     "Deliverable Volume": 773299,
     "%Deliverble": 0.1023,
-    "%change": 0.004212766,
+    "percentChange": 0.004212766,
     "Risk": "LOW"
-  },
-  {
-    "Symbol": "",
-    "Date": "",
-    "Series": "",
-    "Prev Close": "",
-    "Open": "",
-    "High": "",
-    "Low": "",
-    "Last": "",
-    "Close": "",
-    "VWAP": "",
-    "Volume": "",
-    "Turnover": "",
-    "Trades": "",
-    "Deliverable Volume": "",
-    "%Deliverble": "",
-    "%change": "",
-    "Risk": ""
-  },
-  {
-    "Symbol": "",
-    "Date": "",
-    "Series": "",
-    "Prev Close": "",
-    "Open": "",
-    "High": "",
-    "Low": "",
-    "Last": "",
-    "Close": "",
-    "VWAP": "",
-    "Volume": "",
-    "Turnover": "",
-    "Trades": "",
-    "Deliverable Volume": "",
-    "%Deliverble": "",
-    "%change": -0.32655902,
-    "Risk": ""
-  },
-  {
-    "Symbol": "",
-    "Date": "",
-    "Series": "",
-    "Prev Close": "",
-    "Open": "",
-    "High": "",
-    "Low": "",
-    "Last": "",
-    "Close": "",
-    "VWAP": "",
-    "Volume": "",
-    "Turnover": "",
-    "Trades": "",
-    "Deliverable Volume": "",
-    "%Deliverble": "",
-    "%change": 4.538,
-    "Risk": ""
-  },
-  {
-    "Symbol": "",
-    "Date": "",
-    "Series": "",
-    "Prev Close": "",
-    "Open": "",
-    "High": "",
-    "Low": "",
-    "Last": "",
-    "Close": "",
-    "VWAP": "",
-    "Volume": "",
-    "Turnover": "",
-    "Trades": "",
-    "Deliverable Volume": "",
-    "%Deliverble": "",
-    "%change": 0.011621622,
-    "Risk": ""
   }
+  
 ]

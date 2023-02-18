@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import bonddata from '../../data/bonds.json'
 import stocksdata from '../../data/stocks.json'
 
@@ -28,15 +28,20 @@ const DataLowRisk = () => {
     navigate("/portfolio");
   };
   return (
-    <div className="bg-gradient-to-b font-['Montserrat'] from-[#edf5fe] to-[#cee3fc]">
+    <div className="pb-10 bg-gradient-to-b font-['Montserrat'] from-[#f7eeee] to-[#b7abb6]">
       <div className="row">
-      <p className="text-xl font-medium">Government Bonds With Low Risk</p>
+        <div className="row py-2">
+          <Link to="/investment"><button className="ml-auto mr-32 rounded p-1 border-2 border-blue-900 bg-blue-700">Back to Investment Options</button></Link> 
+        </div>
+      <p className="text-xl py-4 font-bold">Government Bonds With Low Risk</p>
       <div className="row">
         <div className="grid grid-cols-3 gap-3">
         {bondData.map((data, index) => {
         if (index < 3) {
           return (
-            <div className="mx-auto col-span-1 bg-white my-3 border-2 border-pink-500 rounded-md" key={data.id}>
+            <div className="border mx-3 border-black">
+            <div className="row h-full px-3 bg-gradient-to-r from-[#31ec4d] to-[#f3e634e0] p-1">
+            <div className="mx-auto col-span-1 bg-white" key={data.id}>
               <div className="pt-5 w-72 font-['Montserrat]">
                 <div className="rounded-lg overflow-hidden shadow-lg max-w-sm h-64">
                   <div className="flex">
@@ -113,23 +118,30 @@ const DataLowRisk = () => {
                 </div>
               </div>
             </div>
+            </div>
+            </div>
           )
             ;
         }
 
       })}
         </div>
+        <div className="row my-4">
+        <Link to="/investment"><button className="ml-auto mr-32 rounded p-1 border-2 border-blue-900 bg-blue-700">View more Government Bonds</button></Link> 
+        </div>
       </div>
       </div>
 
       <div className="row">
-        <p className="text-xl font-medium">Stocks with Low Risk</p>
+        <p className="text-xl py-4 font-bold">Stocks with Low Risk</p>
         <div className="row">
         <div className="grid grid-cols-3 gap-3">
         {stockData.map((data, index) => {
         if (index < 14 && data.Risk =="LOW") {
           return (
-            <div className="mx-auto col-span-1 bg-white my-3 border-2 border-pink-500 rounded-md" key={data.id}>
+            <div className="border mx-3 border-black">
+            <div className="row h-full px-3 bg-gradient-to-r from-[#31ec4d] to-[#f3e634e0] p-1">
+            <div className="mx-auto col-span-1 bg-white " key={data.id}>
               <div className="pt-5 w-72 font-['Montserrat]">
                 <div className="rounded-lg overflow-hidden shadow-lg max-w-sm h-64">
                   <div className="flex">
@@ -205,6 +217,8 @@ const DataLowRisk = () => {
                   </div>
                 </div>
               </div>
+            </div>
+            </div>
             </div>
           )
             ;

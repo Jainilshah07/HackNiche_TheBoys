@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Budget from './pages/budget/Budget';
 import DataLowRisk from './pages/budget/DataLowRisk';
 import DataModerateRisk from './pages/budget/DataModerateRisk';
+import Stocks from './pages/dataofrisks/Stocks';
 import Login from './pages/login/Login';
 import Register from './pages/login/Register';
 import Profile from './pages/profile/Profile';
@@ -23,6 +24,7 @@ function App() {
           <Route exact path='/Moderate-Risk' element={<DataModerateRisk />}></Route>
           <Route exact path='/High-Risk' element={<DataModerateRisk />}></Route>
           <Route exact path='/financial-goal-plan' element={<DataModerateRisk />}></Route>
+          <Route exact path='/stocks-data' element={<Stocks />}></Route>
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

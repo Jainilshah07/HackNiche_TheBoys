@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import mutualfundData from '../../data/mutualFunds.json'
 import stocksdata from '../../data/stocks.json'
 
@@ -30,13 +30,18 @@ const DataLowRisk = () => {
   return (
     <div className="bg-gradient-to-b font-['Montserrat'] from-[#edf5fe] to-[#cee3fc]">
       <div className="row">
-      <p className="text-xl font-medium">Mutual Funds With Moderate Risk</p>
+      <div className="row py-2">
+          <Link to="/investment"><button className="ml-auto mr-32 rounded p-1 border-2 border-blue-900 bg-blue-700">Back to Investment Options</button></Link> 
+        </div>
+      <p className="text-xl my-4 font-bold">Mutual Funds With Moderate Risk</p>
       <div className="row">
         <div className="grid grid-cols-3 gap-3">
         {mutualFunds.map((data, index) => {
-        if (index < 20 && data.Risk =="MODERATE") {
+        if (index < 28 && data.Risk =="MODERATE") {
           return (
-            <div className="mx-auto col-span-1 bg-white my-3 border-2 border-orange-500 rounded-md" key={data.id}>
+            <div className="border mx-3 border-black">
+            <div className="row h-full px-1 bg-gradient-to-r from-[#b0b816] to-[#ff710ce0] p-1">
+            <div className="mx-auto col-span-1 bg-white border-2 border-orange-500 rounded-md" key={data.id}>
               <div className="pt-5 w-72 font-['Montserrat]">
                 <div className="rounded-lg overflow-hidden shadow-lg max-w-sm h-72">
                   <div className="flex">
@@ -114,6 +119,8 @@ const DataLowRisk = () => {
                 </div>
               </div>
             </div>
+            </div>
+            </div>
           )
             ;
         }
@@ -124,7 +131,7 @@ const DataLowRisk = () => {
       </div>
 
       <div className="row">
-        <p className="text-xl font-medium">Stocks with Moderate Risk</p>
+        <p className="text-xl my-4 font-bold">Stocks with Moderate Risk</p>
         <div className="row">
         <div className="grid grid-cols-3 gap-3">
         {stockData.map((data, index) => {
