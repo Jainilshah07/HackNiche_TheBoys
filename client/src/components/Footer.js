@@ -16,7 +16,8 @@ const fOOTER = () => {
                             <div className='text-white text-center mb-2 text-xl font-semibold'>About Us</div>
                         </div>
                         <div className="row">
-                            <img src={logo} className="mx-auto" alt="" />
+                            {/* <img src={logo} className="mx-auto" alt="" /> */}
+                            <p className='text-4xl font-extrabold text-'>Finance <span className='text-blue-100'>Friend</span> </p>
                         </div>
                     </div>
 

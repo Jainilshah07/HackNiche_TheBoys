@@ -31,8 +31,11 @@ const Prediction = () => {
                 </tr>
               </thead>
               <tbody>
-                {stocksData.map((data, index) => (
-                  <tr className="" role="row" key={data.id}>
+                {stocksData.map((data, index) => {
+                  if(index < 30 )
+                  return (
+                    <>
+                    <tr className="" role="row" key={data.id}>
                     <td className="mx-5 border-2 border-black" scope="row">
                       {index + 1}
                     </td>
@@ -40,14 +43,17 @@ const Prediction = () => {
                     <td className="border-2 border-black">{data.Open}</td>
                     <td className="border-2 bg-green-200 border-black">{data.Close}</td>
                   </tr>
-                ))}
+                    </>
+                  )
+                  
+                })}
               </tbody>
             </table>
           </div>
         </div>
         <div className="col-span-3">
-          <div className="row">
-          <img className="mx-8 my-6 w-[950px] " src={Graph1} alt="" />
+          <div className="row mt-6">
+          <img className="mx-8 my-12 w-[950px] " src={Graph1} alt="" />
           <img className="mx-8 my-6 h-[450px] w-[950px] " src={Graph2} alt="" />
           </div>
             

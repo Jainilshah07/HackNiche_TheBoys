@@ -50,7 +50,7 @@ const Register = () => {
     return (
         <div>
       <form onSubmit={SubmitHandler}>
-        <div className="h-[630px] bg-hero text-gray-900 flex justify-center">
+        <div className="h-[672px] bg-hero text-gray-900 flex justify-center">
           <div className="max-w-screen-xl  bg-white shadow sm:rounded-lg flex justify-center flex-1">
             <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-4">
               <div>
