@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import stocksdata from "../data/stocks.json";
+import Graph1 from '../assets/Graph1.png'
+import Graph2 from '../assets/Graph2.png'
 
 const Prediction = () => {
     const [stocksData, setStocksData] = useState([]);
@@ -16,7 +18,7 @@ const Prediction = () => {
   }, []);
   return (
     <div>
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-4">
         <div className="col-span-1">
         <div className="row">
             <table className="table-auto mx-auto my-14 ">
@@ -43,6 +45,14 @@ const Prediction = () => {
             </table>
           </div>
         </div>
+        <div className="col-span-3">
+          <div className="row">
+          <img className="mx-8 my-6 w-[950px] " src={Graph1} alt="" />
+          <img className="mx-8 my-6 h-[450px] w-[950px] " src={Graph2} alt="" />
+          </div>
+            
+        </div>
+        
       </div>
     </div>
   )

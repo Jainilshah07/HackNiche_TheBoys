@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-white border-b-[1.5px] border-black p-2 text-[16px]">
       <Link to="/" className="mr-4 inline-flex items-center">
-        {/* <img src={logo}></img> */}
+        <p className='text-4xl font-extrabold text-'>Finance <span className=''>Friend</span> </p>
       </Link>
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded border-black text-white bg-[#4051A3] hover:text-black hover:bg-white" onClick={() => setOpen(!open)}>

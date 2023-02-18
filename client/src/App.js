@@ -16,7 +16,7 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-gradient-to-b font-['Montserrat'] from-[#edf5fe] to-[#cee3fc]">
       <BrowserRouter>
         <Navbar />
         <Routes>
