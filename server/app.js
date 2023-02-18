@@ -8,6 +8,8 @@ app.use(express.json())
 
 app.use("/api/User", require("./routes/User"))
 
+app.use("/api/Fam", require("./routes/FamilyDetails"))
+
 
 app.listen(PORT, () => {
     console.log("Connected to server")

@@ -9,7 +9,7 @@ require("../Database/db")
 const User = require("../models/User")
 
 router.post("/register", async (req, res) => {
-    let success = false;
+    //et success = false;
     const {
         FirstName,
         LastName,
@@ -36,15 +36,15 @@ router.post("/register", async (req, res) => {
         });
         res.status(200).send("User Registered");
 
-        const data = {
-            num: {
-                id: num.id
-            }
-        }
+        // const data = {
+        //     num: {
+        //         id: num.id
+        //     }
+        // }
 
-        const authtoken = jwt.sign(data, JWT_SECRET);
-        success = true;
-        res.json({ success, authtoken })
+        // const authtoken = jwt.sign(data, JWT_SECRET);
+        // success = true;
+        // res.json({ success, authtoken })
 
     } catch (error) {
         console.error("Hello ", error.message);
