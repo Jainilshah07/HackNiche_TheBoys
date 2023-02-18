@@ -39,6 +39,9 @@ const Navbar = () => {
           <Link to="/financial-goal-plan" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
             <span>Financial Goal</span>
           </Link>
+          <Link to="/prediction" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
+            <span>Prediction</span>
+          </Link>
           
           {/* <Link to="/events/data-2-knowledge" className="block lg:inline-block text-base lg:mt-0 text-black hover:bg-gray-200 p-2 hover:rounded-full mr-4 lg:mr-8">
             <span>Data 2 Knowledge</span>
