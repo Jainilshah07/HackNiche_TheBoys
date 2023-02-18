@@ -2,10 +2,6 @@ const mongoose = require("mongoose")
 const { Schema } = mongoose;
 
 const FamilyDetailsSchema = new mongoose.Schema({
-    user: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'userdata'
-    },
     name: {
         type: String
     },
@@ -23,5 +19,5 @@ const FamilyDetailsSchema = new mongoose.Schema({
     }
 })
 
-const FamilyDetailsData = new mongoose.model("FamilyDetailsData", userSchema);
+const FamilyDetailsData = new mongoose.model("FamilyDetailsData", FamilyDetailsSchema);
 module.exports = FamilyDetailsData;
